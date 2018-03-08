@@ -6,9 +6,24 @@
   font-size: 14px;
 }
 
-.App--Loading {
+.App-Loading {
+  height: 100%;
+}
+
+.App-Loading .App--Loading {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.App--Logo {
+  height: 80px;
+  animation: App--Logo--Spinning infinite 20s linear;
+}
+
+@keyframes App--Logo--Spinning {
+  from { transform: rotate(0deg)}
+  to { transform: rotate(360deg)}
 }

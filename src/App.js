@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './logo.svg';
 import Movie from './Movie';
 
 class App extends Component {
@@ -39,9 +40,18 @@ class App extends Component {
   render() {
     const {movies} = this.state;
     return (
-      <div className={movies ?  "App" : "App--Loading"}>
-        {movies ? this._renderMovies() : 'Loading'}
+      <div className={movies ?  "App" : "App-Loading"}>
+        {movies ? this._renderMovies() : this._loading()}
       </div>    
+    );
+  }
+
+  _loading = () => {
+    return (
+      <div className="App--Loading">
+        <img src={logo} alt="logo" className="App--Logo" />
+        <p>Loading</p>
+      </div>
     );
   }
 }
