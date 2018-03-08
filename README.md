@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Class from [NomadCoder](https://academy.nomadcoders.co/).
 
 ## [WEB LINK](https://hyeonsik.github.io/movie_app/)
----
+
 ## ScreenShot
 
 ### Mobile View
